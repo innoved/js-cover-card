@@ -1,0 +1,45 @@
+.cover-card-slide-right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+.cover-card-slide-left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+.cover-card-holder {
+  position: relative;
+  overflow-x: hidden; }
+
+.cover-card {
+  display: none; }
+
+.confirm-card,
+.cover-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1021; }
+  .confirm-card .btn-group,
+  .cover-card .btn-group {
+    max-width: 70%;
+    margin: 0 auto; }
+    .confirm-card .btn-group .btn,
+    .cover-card .btn-group .btn {
+      height: 50px;
+      font-size: 1rem; }
+      @media screen and (min-width: 768px) {
+        .confirm-card .btn-group .btn,
+        .cover-card .btn-group .btn {
+          margin: 0 1rem; } }
+
+.cover-card-disabler {
+  display: block;
+  opacity: 0.5;
+  cursor: not-allowed; }
+
+.cover-card-is-open .cover-card-under-content {
+  opacity: 0; }
+
