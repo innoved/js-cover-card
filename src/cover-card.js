@@ -1,4 +1,4 @@
-import './cover-card.scss';
+//import './cover-card.scss';
 
 (function($) {
 
