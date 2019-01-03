@@ -11,9 +11,25 @@ Allows functionality to have an element slide in/out of the container covering a
  - If the card needs to cover any content underneath it, give the
    covered container a class of .cover-card-under-content.
 
+## Example
+
+    <div class="cover-card-holder">
+	    <div class="cover-card cover-card-slide-right">
+			<div class="cover-card-content">
+				//card content here
+			</div>
+		</div>
+	    <div class="cover-card-under-content">
+			//This will be convered on show
+		</div>
+	</div>
+
 ## Public Methods
 
     innovedCoverCard.showCard();
     innovedCoverCard.hideCard();
 	innovedCoverCard.positionDropdown(); //remove overflow hidden when dropdown is activated
 	innovedCoverCard.setUnderContentHeight(); //sets the height of the content under the cover card to match for smooth transitions
+
+
+    
