@@ -6,11 +6,7 @@
 
   const InnovedCoverCard = function() {
 
-    /**
-     * Public methods
-     */
-
-    //remove overflow hidden when dropdown is activated
+    //public - remove overflow hidden when dropdown is activated
     this.positionDropdown = function(container) {
         $(container+" .dropdown").on("show.bs.dropdown", function() {
             if(!$(this).hasClass('bootstrap-select')) {
@@ -24,8 +20,9 @@
                 $('.cover-card-under-content').css('overflow', 'hidden');
             }
         });
-    },
+    };
 
+    //public
     this.showCard = function(onComplete) {
         $('.cover-card').css('display', 'block');
         TweenMax.to($('.cover-card'), 0.6, { x: '0%', ease: Power3.easeOut, onComplete:function() 
@@ -38,12 +35,13 @@
                 }
             } 
         });
-        setUnderContentHeight();
+        this.setUnderContentHeight();
         if($('.cover-card .dropdown').length) {
-            positionDropdown('.cover-card');
+            this.positionDropdown('.cover-card');
         }
-    },
+    };
 
+    //public
     this.hideCard = function() {
         $('.cover-card').css('height', '100%');
         TweenMax.to($('.cover-card'), 0.6, { x: '100%', ease: Power1.easeOut, onComplete:function() 
@@ -59,14 +57,14 @@
         });
         $('html').removeClass('cover-card-is-open');
         if($('.cover-card-holder .dropdown').length) {
-            positionDropdown('.cover-card-holder');
+            this.positionDropdown('.cover-card-holder');
         }
-    },
+    };
 
-    //sets the height of the content under the cover card to match for smooth transitions
+    //public - sets the height of the content under the cover card to match for smooth transitions
     this.setUnderContentHeight = function() {
         TweenMax.to($('.cover-card-under-content'), 1, { height:($('.cover-card-content').height()+65)+'px', ease: Power1.easeOut});
-    }
+    };
 
   };
 
