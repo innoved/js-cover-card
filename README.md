@@ -41,7 +41,7 @@ For examples see: http://ccf.local.vm/ems/cf/config/assessment-config and http:/
 
 On this page there is one cover card used to hold a form, for either creating a new configuration or editing an existing one.
 
-From the configuration create a new configuration. This list should fade slightly and loading icon should appear. After a couple of second the cover card should slide in from the left, covering the list completely. The white background of the card should also adjust it's height to automatically fit the form content within.
+From the configuration list create a new configuration. This list should fade slightly and loading icon should appear. After a couple of seconds the cover card should slide in from the left, covering the list completely. The white background of the card should also adjust it's height to automatically fit the form content within.
 
 You should be able to close the cover card by either clicking the 'back button' (top right), or the 'cancel button' (bottom left). The cover card should then slide out of the screen to the right completely, revealing the list under it again.
 
@@ -51,7 +51,7 @@ The cover card should always automatically adjust it's height depending on the c
 
 On this page there is two cover card instances. One to display content for viewing a set, and one to display content for editing the set. *(Note: there is actually only one cover card div on the page. See \*1 below.)*
 
-Click on an assessment set from the left, the page should load and the cover card should slide in showing the set's information.
+Click on an assessment set from the list, the page should load and the cover card should slide in showing the set's information.
 
 You can then click 'Edit assessment set' near the top to load in the second cover card instance. Once clicking this button the first cover card will slide out, revealing the list (in a loading state!), then slide back in to display the set's editable form content. 
 
