@@ -36,9 +36,6 @@
             } 
         });
         this.setUnderContentHeight();
-        if($('.cover-card .dropdown').length) {
-            this.positionDropdown('.cover-card');
-        }
     };
 
     //public
