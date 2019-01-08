@@ -2,7 +2,7 @@
   "name": "js-cover-card",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "cover-card.js",
   "scripts": {
     "lint": "echo '=> linting' && jshint src/cover-card.js",
     "build": "npx babel src/cover-card.js --out-file cover-card.js && webpack",
