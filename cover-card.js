@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-//import './cover-card.scss';
 (function ($) {
   'use strict';
 

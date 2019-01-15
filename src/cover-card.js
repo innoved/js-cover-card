@@ -1,5 +1,3 @@
-//import './cover-card.scss';
-
 (function($) {
 
   'use strict';
