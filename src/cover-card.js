@@ -28,8 +28,12 @@
                 $('.cover-card-holder').css('overflow', 'visible');
                 $('.cover-card-under-content').css('overflow', 'hidden');
                 $('html').addClass('cover-card-is-open');
-                if(onComplete) {
+                if(onComplete != undefined) {
+                  if(typeof onComplete == 'string' || onComplete instanceof String) {
                     eval(onComplete);
+                  } else if(typeof onComplete == 'function') {
+                    onComplete();
+                  }
                 }
             } 
         });

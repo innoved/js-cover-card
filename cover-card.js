@@ -36,8 +36,12 @@ exports.default = void 0;
           $('.cover-card-under-content').css('overflow', 'hidden');
           $('html').addClass('cover-card-is-open');
 
-          if (_onComplete) {
-            eval(_onComplete);
+          if (_onComplete != undefined) {
+            if (typeof _onComplete == 'string' || _onComplete instanceof String) {
+              eval(_onComplete);
+            } else if (typeof _onComplete == 'function') {
+              _onComplete();
+            }
           }
         }
       });
